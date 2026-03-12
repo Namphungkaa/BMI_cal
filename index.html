@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>โปรแกรมคำนวณ BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>เครื่องคำนวณ BMI</h1>
+        <div class="input-group">
+            <label for="weight">น้ำหนัก (กิโลกรัม):</label>
+            <input type="number" id="weight" placeholder="ตัวอย่าง: 65">
+        </div>
+        <div class="input-group">
+            <label for="height">ส่วนสูง (เซนติเมตร):</label>
+            <input type="number" id="height" placeholder="ตัวอย่าง: 170">
+        </div>
+        <button onclick="calculateBMI()">คำนวณเลย</button>
+        
+        <div id="result-container" class="hidden">
+            <h2>ผลลัพธ์ของคุณคือ</h2>
+            <div id="bmi-value">--</div>
+            <div id="bmi-status">--</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
